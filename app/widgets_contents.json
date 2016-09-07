@@ -1,1 +1,10 @@
-contents: [];
+{
+    "UserMenu": {
+        "buttons": [
+            { "label": "CHECK IN", "order": 0 },
+            { "label": "EVENTS", "order": 1 },
+            { "label": "ACCOUNT", "order": 2 },
+            { "label": "SETTINGS", "order": 3 }
+        ]
+    }
+}

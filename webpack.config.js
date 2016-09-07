@@ -1,5 +1,5 @@
 module.exports = {
-    entry: "./app/app.jsx",
+    entry: "./app/App.jsx",
     output: {
         path: __dirname,
         filename: "bundle.js"
@@ -13,6 +13,10 @@ module.exports = {
                 query: {
                     presets: ['es2015', 'react']
                 }
+            },
+            {
+                test: /\.json$/,
+                loader: "json"
             },
             {
                 test: /\.scss$/,
