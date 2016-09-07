@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
+require('../style.scss');
+
 class Test extends Component {
     render() {
         return(
