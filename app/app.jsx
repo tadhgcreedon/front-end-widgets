@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 require('../style.scss');
+let widgets_contents = require('./widgets-contents.json');
 
 class Test extends Component {
     render() {
