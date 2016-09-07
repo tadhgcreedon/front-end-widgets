@@ -7,7 +7,7 @@ export default class UserMenu extends Component {
                 <button className='user_menu_button' key={button.order}>
                   {button.image}
                   {button.label}
-                  {/*button.notifications > 0 ? <Badge notification_number={button.notifications}/> : null */}
+                  {button.notifications > 0 ? <Badge notification_number={button.notifications}/> : null}
                 </button>
             );
         });
@@ -20,7 +20,7 @@ export default class UserMenu extends Component {
 class Badge extends Component {
     render() {
         return(
-            <section className='user_menu_button_badge'>{this.props.notification_number}</section>
+            <span className='user_menu_button_badge'>{this.props.notification_number}</span>
         );
     }
 }

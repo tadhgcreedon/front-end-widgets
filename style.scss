@@ -1,3 +1,8 @@
+$grey: #FAFAFA;
+$grey_dark: #DCD8D6;
+$slate: #90867B;
+$green: #39A374;
+
 body {
     background-color: #333;
 }
@@ -40,4 +45,15 @@ body {
         background-color: #DCD8D6;
         border-bottom: 2px solid #39A374;
     }
+}
+
+.user_menu_button_badge {
+    font-size: 9px;
+    margin-left: 1px;
+    background-color: #DB6329;
+    color: #FAFAFA;
+    padding: 1px 4px 1px 4px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 8px;
 }
