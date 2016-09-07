@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import UserMenu from './UserMenu.jsx';
 
 require('../style.scss');
-let widgets_contents = require('./widgets-contents.json');
+let widgets_contents = require('./widgets_contents.json');
 
-class Test extends Component {
+class App extends Component {
     render() {
         return(
-            <div>test</div>
+            <UserMenu content={widgets_contents['UserMenu']} />
         );
     }
 }
 
-ReactDOM.render(<Test/>, document.getElementById('render-target'));
+ReactDOM.render(<App/>, document.getElementById('render-target'));
