@@ -1,10 +1,10 @@
 {
     "UserMenu": {
         "buttons": [
-            { "label": "CHECK IN", "order": 0 },
-            { "label": "EVENTS", "order": 1 },
-            { "label": "ACCOUNT", "order": 2 },
-            { "label": "SETTINGS", "order": 3 }
+            { "icon": "", "label": "CHECK IN", "notifications": 3, "order": 0 },
+            { "icon": "", "label": "EVENTS", "notifications": 0, "order": 1 },
+            { "icon": "", "label": "ACCOUNT", "notifications": 0, "order": 2 },
+            { "icon": "", "label": "SETTINGS", "notifications": 0, "order": 3 }
         ]
     }
 }
