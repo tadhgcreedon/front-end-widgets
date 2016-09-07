@@ -1,0 +1,19 @@
+{
+  "name": "front-end-widgets",
+  "version": "1.0.0",
+  "description": "2 Widgets built based on a reference PSD file.",
+  "main": "app/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tadhgcreedon/front-end-widgets.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tadhgcreedon/front-end-widgets/issues"
+  },
+  "homepage": "https://github.com/tadhgcreedon/front-end-widgets#readme"
+}
