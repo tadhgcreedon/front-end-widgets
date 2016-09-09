@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 
 export default class UserMenu extends Component {
     render(){
-        let buttons = this.props.content['buttons'].map((button) => {
+        let buttons = this.props.content['buttons'].map((button, index) => {
             return(
-                <button className='user_menu_button' key={button.order}>
-                  {button.image}
-                  {button.label}
-                  {button.notifications > 0 ? <Badge notification_number={button.notifications}/> : null}
+                <button className='user_menu_button' key={index}>
+                  <img className='user_menu_button_icon' src={button.icon_path} />&nbsp;
+                  <span className='user_menu_button_text'>
+                    {button.label}
+                    {button.notifications > 0 ? <Badge notification_number={button.notifications}/> : null}
+                  </span>
                 </button>
             );
         });
