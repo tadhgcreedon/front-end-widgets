@@ -1,3 +1,4 @@
+/*--- COLORS ---*/
 $grey: #FAFAFA;
 $grey_dark: #DCD8D6;
 $slate: #90867B;
@@ -9,10 +10,12 @@ $mint-darker: #63A77C;
 $red: #F84E0F;
 $red-dark: #DB6329;
 
+/*--- GENERAL STYLES ---*/
 body {
     background-color: #333;
     font-family: sans-serif;
 }
 
+/*--- INDIVIDUAL WIDGET STYLES ---*/ 
 @import "style/usermenu";
 @import "style/stocks";

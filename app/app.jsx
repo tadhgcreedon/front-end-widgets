@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+
+// User Menu Widget components
 import UserMenu from './UserMenu.jsx';
+// Stocks component
 import Stocks from './Stocks.jsx';
+// Content for each of the widgets
+let widgets_contents = require('./widgets_contents.json');
 
 require('../style/style.scss');
-let widgets_contents = require('./widgets_contents.json');
 
 class App extends Component {
     render() {

@@ -4,6 +4,9 @@ export default class UserMenu extends Component {
     constructor(props) {
         super(props);
 
+        /* store a list of all button labels and maintain a state object with each of the labels and a boolean flag
+            for conditional styling of a selected button. This is done in a way that buttons could be added or removed
+            inside the widget_contents JSON file and the component will still function as expected.*/
         let selected = {};
         this.buttons = [];
         this.props.content['buttons'].forEach((button) => {
@@ -13,6 +16,7 @@ export default class UserMenu extends Component {
         this.state = { selected };
     }
 
+    // handler function for button select event. sets state
     handleButtonClick(button_label){
         for(let button in this.state.selected) {
             let newSelected = this.state.selected;
@@ -24,28 +28,22 @@ export default class UserMenu extends Component {
                     newSelected[button] = false;
                 }
             }
-            this.setState({selected: newSelected}, () => {
-                console.log(newSelected);
-            });
+            this.setState({selected: newSelected});
         }
     }
 
+    // function that adds a custom class defined in the widget_contents JSON file to each selected button.
     buttonSelectedCustomClass(button_label) {
-        switch(button_label) {
-            case 'CHECK IN':
-                return 'user_menu_button_selected_check_in';
-            case 'EVENTS':
-                return 'user_menu_button_selected_events';
-            case 'ACCOUNT':
-                return 'user_menu_button_selected_account';
-            case 'SETTINGS':
-                return 'user_menu_button_selected_settings';
-            default:
-                return '';
+        if(this.props.content['button_selected_classes'].hasOwnProperty(button_label)) {
+            return this.props.content['button_selected_classes'][button_label];
+        }
+        else {
+            return '';
         }
     }
 
     render(){
+        // creates and returns all button markup
         let buttons_selected_classes;
         let buttons = this.props.content['buttons'].map((button, index) => {
             if(this.state.selected[button.label] === true) {
@@ -70,6 +68,7 @@ export default class UserMenu extends Component {
     }
 }
 
+// Badge for a button that has notifications.
 class Badge extends Component {
     render() {
         return(

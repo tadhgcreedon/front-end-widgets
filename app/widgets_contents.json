@@ -5,7 +5,13 @@
             { "icon_path": "../images/heart-icon.png", "label": "EVENTS", "notifications": 0 },
             { "icon_path": "../images/user-icon.png", "label": "ACCOUNT", "notifications": 0 },
             { "icon_path": "../images/settings-icon.png", "label": "SETTINGS", "notifications": 0 }
-        ]
+        ],
+        "button_selected_classes": {
+            "CHECK IN": "user_menu_button_selected_check_in",
+            "EVENTS": "user_menu_button_selected_events",
+            "ACCOUNT": "user_menu_button_selected_account",
+            "SETTINGS": "user_menu_button_selected_settings"
+        }
     },
     "Stocks": {
         "stocks": [
