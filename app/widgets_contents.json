@@ -6,5 +6,31 @@
             { "icon": "", "label": "ACCOUNT", "notifications": 0, "order": 2 },
             { "icon": "", "label": "SETTINGS", "notifications": 0, "order": 3 }
         ]
+    },
+    "Stocks": {
+        "stocks": [
+            {
+                "date": "Today 2:25 PM",
+                "company": "Apple",
+                "abbreviation": "AAPL",
+                "thirty_days_growth": 634.39,
+                "24_hours_growth": 2.18,
+                "24_hours_growth_percentage": 3.71,
+                "thirty_days_history": [
+                    15, 16, 50, 55, 25, 18, 27, 20, 18, 16,
+                    15, 28, 23, 18, 16, 15, 21, 14, 15, 15,
+                    15, 15, 17, 21, 30, 10, 21, 18, 30, 35
+                ],
+                "city": "Salt Lake City",
+                "state": "Utah",
+                "shares_traded": 13.5,
+                "market_cap": 28.44,
+                "last_nine_months_history": [
+                    [-1, 0.33], [-1, 0.4], [-1, 0.65], [-1, 0.8], [1, 0.75],
+                    [1, 0.45], [1, 0.1], [1, 0.18]
+                ],
+                "yearly_change": 127.01
+            }
+        ]
     }
 }
