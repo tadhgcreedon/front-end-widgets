@@ -61,3 +61,75 @@
     position: relative;
     bottom: 8px;
 }
+
+@media screen and (max-width: 1145px) {
+    #user_menu_container {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 895px) {
+    .user_menu_button {
+        font-size: 10px;
+    }
+
+    .user_menu_button_icon {
+        transform: scale(0.5);
+    }
+}
+
+@media screen and (max-width: 805px) {
+    #user_menu_container {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    .user_menu_button {
+        &:first-child {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 0px;
+        }
+        &:nth-child(3) {
+            border-top-right-radius: 5px;
+        }
+        &:last-child {
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-top: 1px solid $slate;
+        }
+    }
+}
+
+@media screen and (max-width: 543px) {
+    #user_menu_container {
+        width: 30%;
+    }
+    .user_menu_button {
+        &:first-child {
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 0px;
+        }
+        &:nth-child(2) {
+            border-top-right-radius: 0px;
+            border-top: 1px solid $slate;
+        }
+        &:nth-child(3) {
+            border-top-right-radius: 0px;
+            border-top: 1px solid $slate;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #user_menu_container {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #user_menu_container {
+        width: 45%;
+    }
+}
