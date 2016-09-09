@@ -1,24 +1,16 @@
-$grey: #FAFAFA;
-$grey_dark: #DCD8D6;
-$slate: #90867B;
-$green: #39A374;
-
-body {
-    background-color: #333;
-}
-
 #user_menu_container {
-    background-color: #FAFAFA;
+    background-color: $grey;
     border-radius: 5px;
     display: flex;
     flex-flow: row wrap;
   	& > * {
   		  flex: 1 auto;
-  		    height: 100%;
+  		  height: 100%;
   	}
 
     height: 50px;
     width: 35%;
+    float: right;
 }
 
 .user_menu_button {
@@ -29,7 +21,7 @@ body {
     margin: 0;
     border: none;
     color: #90867B;
-    background-color: #FAFAFA;
+    background-color: $grey;
     border-bottom: 2px solid transparent;
     cursor: pointer;
 
@@ -42,16 +34,16 @@ body {
         border-bottom-right-radius: 5px;
     }
     &:hover {
-        background-color: #DCD8D6;
-        border-bottom: 2px solid #39A374;
+        background-color: $grey_dark;
+        border-bottom: 2px solid $green;
     }
 }
 
 .user_menu_button_badge {
     font-size: 9px;
     margin-left: 1px;
-    background-color: #DB6329;
-    color: #FAFAFA;
+    background-color: $red;
+    color: $grey;
     padding: 1px 4px 1px 4px;
     border-radius: 50%;
     position: relative;

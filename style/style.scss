@@ -1,0 +1,17 @@
+$grey: #FAFAFA;
+$grey_dark: #DCD8D6;
+$slate: #90867B;
+$beige: #F6F2EF;
+$green: #39A374;
+$mint: #78C189;
+$mint-dark: #71B68C;
+$mint-darker: #63A77C;
+$red: #DB6329;
+
+body {
+    background-color: #333;
+    font-family: sans-serif;
+}
+
+@import "style/usermenu";
+@import "style/stocks";
