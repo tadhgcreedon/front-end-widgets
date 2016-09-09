@@ -37,6 +37,6 @@
 
 * Finally, I cleaned up the fonts in the stocks widget to closer reflect the mockup PSD. 
 
+---
 
-
-
+**To run: clone repository, navigate to the cloned project directory inside a terminal window, run npm install and then run webpack-dev-server.**
