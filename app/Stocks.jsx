@@ -74,8 +74,10 @@ export default class Stocks extends Component {
               </section>
 
               <section id="stocks_info">
-                {this.props.content.stocks[0].date}
-                <h2>{this.props.content.stocks[0].city + ', ' + this.props.content.stocks[0].state}</h2>
+                <span id="stocks_info_date_location_text">
+                  {this.props.content.stocks[0].date}
+                  <h2>{this.props.content.stocks[0].city + ', ' + this.props.content.stocks[0].state}</h2>
+                </span>
                 <section id="stocks_info_overview">
                   <section id="stocks_info_overview_shares_traded">
                     <h3>{this.props.content.stocks[0].shares_traded + 'M'}</h3>
