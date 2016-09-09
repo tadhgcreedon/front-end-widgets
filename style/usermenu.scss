@@ -40,6 +40,37 @@
     }
 }
 
+.user_menu_button_selected {
+    background-color: black;
+    color: white;
+    border-bottom: 2px solid $green;
+}
+
+.user_menu_button_selected_check_in {
+    border-bottom: 2px solid lightblue;
+    &:hover {
+        border-bottom: 2px solid lightblue;
+    }
+}
+.user_menu_button_selected_events {
+    border-bottom: 2px solid $red;
+    &:hover {
+        border-bottom: 2px solid $red;
+    }
+}
+.user_menu_button_selected_account {
+    border-bottom: 2px solid yellow;
+    &:hover {
+        border-bottom: 2px solid yellow;
+    }
+}
+.user_menu_button_selected_settings {
+    border-bottom: 2px solid purple;
+    &:hover {
+        border-bottom: 2px solid purple;
+    }
+}
+
 .user_menu_button_icon {
     transform: scale(0.75);
     position: relative;
@@ -54,7 +85,7 @@
 .user_menu_button_badge {
     font-size: 9px;
     margin-left: 1px;
-    background-color: $red;
+    background-color: $red-dark;
     color: $grey;
     padding: 1px 4px 1px 4px;
     border-radius: 50%;
