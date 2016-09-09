@@ -48,7 +48,7 @@ export default class Stocks extends Component {
                 </section>
                 <section id="stocks_graph_chart">
                   <section id="stocks_graph_chart_lines_container">
-                    <svg id="stocks_graph_chart_lines" viewBox="0 0 400 75">
+                    <svg id="stocks_graph_chart_lines" viewBox="0 0 400 75" aria-label="A line graph showing the value of the stock rising and falling over the last 30 days.">
                       <polyline
                         fill="none"
                         stroke="white"
@@ -57,7 +57,7 @@ export default class Stocks extends Component {
                       />
                     </svg>
                   </section>
-                  <section id="stocks_graph_chart_bars">
+                  <section id="stocks_graph_chart_bars" aria-label="A bar graph depicting the value of the stock rising and falling over each of the last 30 days.">
                     {thirty_days_history}
                   </section>
                 </section>
@@ -77,7 +77,7 @@ export default class Stocks extends Component {
                   </section>
                   <section id="stocks_info_overview_graph">
                     AAPL
-                    <section id="stocks_info_overview_graph_bars">
+                    <section id="stocks_info_overview_graph_bars" aria-label="A bar graph indicating the individual growth or decline for each of the last 9 months.">
                       {last_nine_months_history}
                     </section>
                   </section>
