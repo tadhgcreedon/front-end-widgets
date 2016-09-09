@@ -24,9 +24,7 @@ export default class UserMenu extends Component {
                     newSelected[button] = false;
                 }
             }
-            this.setState({selected: newSelected}, () => {
-                console.log(newSelected);
-            });
+            this.setState({selected: newSelected});
         }
     }
 
