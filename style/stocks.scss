@@ -97,9 +97,8 @@
     width: 170px;
     & > * {
         flex: 1 auto;
-        width: 7px;
         height: 44px;
-        margin-right: 6px;
+        margin-right: 5%;
         background-color: $beige;
     }
 }
@@ -125,4 +124,100 @@
     padding: 10px 0 10px 0;
     margin-top: 5px;
     width: 120px;
+}
+
+
+@media screen and (max-width: 1670px) {
+    #stocks_container {
+        width: 30%;
+    }
+    #stocks_info_overview_graph {
+        margin-right: 70px;
+    }
+}
+
+@media screen and (max-width: 1595px) {
+    #stocks_info_overview_graph {
+        margin-right: 0px;
+    }
+    #stocks_info_overview_graph_bars {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1594px) {
+    #stocks_info_overview_graph {
+        margin-right: 70px;
+    }
+}
+
+@media screen and (max-width: 1116px) {
+    #stocks_container {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 959px) {
+    #stocks_container {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 841px) {
+    #stocks_container {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #stocks_container {
+        height: 560px;
+    }
+
+    #stocks_info_overview {
+        & > * {
+            width: 100%;
+        }
+    }
+
+    #stocks_graph_chart_lines_container {
+        bottom: 20px;
+    }
+
+    #stocks_info_overview_shares_traded {
+        margin-bottom: 5px;
+    }
+
+    #stocks_info_overview_graph {
+        margin-right: 0px;
+    }
+
+    #stocks_info_overview_graph_bars {
+        width: 100%;
+    }
+
+    #stocks_info_overview_yearly_change {
+        margin-top: 40px;
+    }
+
+    #stocks_info_overview_yearly_change_amount {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 493px) {
+    #stocks_container {
+        height: 580px;
+    }
+
+    #stocks_graph_chart_lines_container {
+        bottom: 0px;
+        left: 4px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #stocks_graph_chart_lines_container {
+        top: 20px;
+    }
 }
